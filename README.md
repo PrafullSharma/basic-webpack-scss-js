@@ -31,6 +31,8 @@ For more info, see [stylelint rules documentation](https://github.com/stylelint/
   $ yarn bundle
 ```
 
+It will minify css and js
+
 ## Credits
 
 - https://github.com/rauschma/webpack-es6-demo
