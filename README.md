@@ -2,7 +2,6 @@
 
 A sample setup for Webpack with ES6 and Sass
 
-
 ## Environment setup
 
 ```sh
@@ -22,7 +21,6 @@ Open [http://localhost:3001](http://localhost:3001) in a browser. `./app.js` is 
 ## Sass linting
 
 [Stylelint](http://stylelint.io/) is used to enforce consistent conventions and avoid errors in stylesheets.
-
 
 I've edited the options of each rule to my liking, based mostly on [stylelint example config](http://stylelint.io/user-guide/example-config/) and [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard).
 For more info, see [stylelint rules documentation](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md).
