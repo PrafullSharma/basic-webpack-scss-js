@@ -1,2 +1,2 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);h1{display:flex;transition:all .5s;user-select:none;background:linear-gradient(180deg,#fff,#000);font-family:Roboto;padding:2em}.main-component__title,.u-ellipsis{color:#554}
+@import url(https://fonts.googleapis.com/css?family=Roboto);h1{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:all .5s;transition:all .5s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#000));background:linear-gradient(180deg,#fff,#000);font-family:Roboto;padding:5em}.main-component__title,.u-ellipsis{color:#554}
 /*# sourceMappingURL=app.min.css.map*/

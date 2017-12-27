@@ -30,9 +30,6 @@ module.exports = {
       quiet: false
     }),
 
-    // new UglifyJsPlugin({
-    //   sourceMap: true,
-    // }),
   ],
 
   module: {
@@ -49,8 +46,9 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader' },
-            { loader: 'sass-loader' }
+            'css-loader',
+            'postcss-loader',
+            'sass-loader'
           ]
         })
       }
