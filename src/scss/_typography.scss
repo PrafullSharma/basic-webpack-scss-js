@@ -1,13 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-$base-font: 'Roboto';
-$title-padding: 2em;
+$font-roboto: 'Roboto', sans-serif;
+
+@mixin media($point) {
+  @if $point == xxlarge {
+    @media (min-width: 1340px) { @content ; }
+  }
+  @else if $point == xlarge {
+    @media (min-width: 1200px) { @content ; }
+  }
+  @else if $point == large {
+    @media (min-width: 992px) { @content ; }
+  }
+  @else if $point == small {
+    @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == xsmall {
+    @media (max-width: 768px) { @content ; }
+  }
+  @else if $point == xxsmall {
+    @media (max-width: 576px) { @content ; }
+  }
+  @else if $point == xxxsmall {
+    @media (max-width: 360px) { @content ; }
+  }
+}
 
 h1 {
   display: flex;
   transition: all 0.5s;
   user-select: none;
-  background: linear-gradient(to bottom, white, black);
-  font-family: $base-font;
-  padding: $title-padding;
+  font-family: $font-roboto;
+  padding: 2em;
+  background: #000 url('./images/Image00110.jpg') 50% 50% no-repeat;
 }

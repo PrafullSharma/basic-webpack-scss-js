@@ -1,5 +1,6 @@
 'use strict';
 
+const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const styleLintPlugin = require('stylelint-webpack-plugin');
 
@@ -9,15 +10,15 @@ module.exports = {
   entry: './app.js',
 
   output: {
-    path: __dirname,
-    filename: 'js/app.js'
+    filename: 'js/app.js',
+    path: path.resolve(__dirname, '')
   },
 
   plugins: [
     // Specify the resulting CSS filename
     new ExtractTextPlugin({ // define where to save the file
       filename: 'css/app.min.css',
-      allChunks: true,
+      allChunks: true
     }),
 
     // Stylelint plugin
@@ -49,8 +50,19 @@ module.exports = {
             'css-loader',
             'postcss-loader',
             'sass-loader'
-          ]
+          ],
+          publicPath: "../"
         })
+      },
+      {
+        test: /\.(png|jp(e*)g|gif)$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8000, // Convert images < 8kb to base64 strings [hash]-[name].[ext]
+            name: 'images/[hash]-[name].[ext]'
+          }
+        }]
       }
     ]
   },
