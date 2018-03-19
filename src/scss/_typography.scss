@@ -6,21 +6,27 @@ $font-roboto: 'Roboto', sans-serif;
   @if $point == xxlarge {
     @media (min-width: 1340px) { @content ; }
   }
+
   @else if $point == xlarge {
     @media (min-width: 1200px) { @content ; }
   }
+
   @else if $point == large {
     @media (min-width: 992px) { @content ; }
   }
+
   @else if $point == small {
     @media (min-width: 768px) { @content ; }
   }
+
   @else if $point == xsmall {
     @media (max-width: 768px) { @content ; }
   }
+
   @else if $point == xxsmall {
     @media (max-width: 576px) { @content ; }
   }
+
   @else if $point == xxxsmall {
     @media (max-width: 360px) { @content ; }
   }
