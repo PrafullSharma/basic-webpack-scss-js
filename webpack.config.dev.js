@@ -1,8 +1,10 @@
 'use strict';
 
-const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const styleLintPlugin = require('stylelint-webpack-plugin');
+const path = require('path')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const styleLintPlugin = require('stylelint-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 require('es6-promise').polyfill();
 
@@ -59,7 +61,7 @@ module.exports = {
         use: [{
           loader: 'url-loader',
           options: {
-            // limit: 8000, // Convert images < 8kb to base64 strings [hash]-[name].[ext]
+            limit: 1000, // Convert images < 1kb to base64 strings [hash]-[name].[ext]
             name: 'images/[name].[ext]'
           }
         }]
