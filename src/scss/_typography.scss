@@ -1,3 +1,4 @@
+// stylelint-disable at-rule-empty-line-before
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 $font-roboto: 'Roboto', sans-serif;
@@ -32,5 +33,5 @@ h1 {
   user-select: none;
   font-family: $font-roboto;
   padding: 2em;
-  background: #000 url('./images/Image00110.jpg') 50% 50% no-repeat;
+  // background: #000 url('./images/Image00110.jpg') 50% 50% no-repeat;
 }

@@ -1,3 +1,2 @@
 import './src/main.scss';
-import './src/main.js';
-
+// import './src/main.js';
