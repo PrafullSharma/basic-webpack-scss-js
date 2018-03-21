@@ -1,2 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);h1{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:all .5s;transition:all .5s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:Roboto,sans-serif;padding:2em;background:#000 url(../images/1eabf97c44ebbf5f883f1ed9315083a8-Image00110.jpg) 50% 50% no-repeat}.main-component__title,.u-ellipsis{color:#554}
-/*# sourceMappingURL=app.min.css.map*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);/** postcss-bem-linter: define main-component; weak */
+h1 {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Roboto", sans-serif;
+  padding: 2em; }
+
+.main-component__title {
+  color: #554; }
+
+/** postcss-bem-linter: define utilities */
+.u-ellipsis {
+  color: #554; }

@@ -13,7 +13,7 @@ module.exports = {
   mode: 'development',
 
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin('css/app.min.css'),
   ],
 
   module: {
